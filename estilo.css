@@ -182,9 +182,18 @@ footer .links a:hover {
 /* ESTILO CONTACTO */
 
 .contacto {
+    background-color: rgb(133, 164, 196);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.699);
+
 
 }
 
 
-
 /* ESTILO REGISTRO */
+
+.registro{
+    background-color: rgb(133, 164, 196);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.699);
+
+
+}
