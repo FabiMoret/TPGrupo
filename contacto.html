@@ -9,56 +9,74 @@
 </head>
 
 <body>
-    <h1>Contacto</h1>
-    <form action="" method="post">
-        <h2>Contacto</h2>
 
-        <fieldset>
-            <legend>Datos personales</legend>
+     <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+                <a href="#">Contacto</a>
+            </div>
+            <nav>
+                <!--dejar uno al lado del otro para mostrar como debe quedar -->
+                <a href="principal.html">Inicio</a>
+                <a href="nosotros.html">Quienes somos</a>
+                <a href="registro.html">Registro</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </header>
+        <div class="contacto">
+        <main>
+            <div>
+                <form action="" method="post">
+                    <h2>Contacto</h2>
 
-            <label for="nom">Nombre:</label><br>
-            <input type="text" name="nombre" id="nom" size="15" required placeholder="Tu nombre...">
-            <br><br>
+                    <!-- <fieldset> -->
+                        <legend>Datos personales</legend>
 
-            <label for="ape">Apellido:</label><br>
-            <input type="text" name="" id="ape" size="15" required placeholder="Tu apellido...">
-            <br><br>
+                        <label for="nom">Nombre:</label><br>
+                        <input type="text" name="nombre" id="nom" size="15" required placeholder="Tu nombre...">
+                        <br><br>
 
-            <label for="email">Email:</label><br>
-            <input type="email" name="" id="email" required placeholder="ejemplo@email.com">
-            <br><br>
+                        <label for="ape">Apellido:</label><br>
+                        <input type="text" name="" id="ape" size="15" required placeholder="Tu apellido...">
+                        <br><br>
 
-            <label for="edad"></label> Soy mayor de edad?
-            <br>
-            <input type="radio" name="edad" value="1"> Tengo mas de 18 años.
-            <br>
-            <input type="radio" name="edad" value="2"> Soy menor de 18 años.
-            <br><br>
-            
-            <label for="tema">Motivo:</label>
-            <select name="tem" id="tema">
-                <option value="1">Solicitud</option>
-                <option value="1">Sugerencia</option>
-                <option value="2">Reclamo</option>
-                <option value="3">Otro</option>               
-            </select>
-            <br><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" name="" id="email" required placeholder="ejemplo@email.com">
+                        <br><br>
 
-            <label for="consulta">Escribanos su consulta:</label><br>
-            <textarea name="" id="consulta" cols="30" rows="10" placeholder="Escriba aquí su consulta..."></textarea>
-            <br>
+                        <label for="edad"></label> Soy mayor de edad?
+                        <br>
+                        <input type="radio" name="edad" value="1"> Tengo mas de 18 años.
+                        <br>
+                        <input type="radio" name="edad" value="2"> Soy menor de 18 años.
+                        <br><br>
 
-        </fieldset>
+                        <label for="tema">Motivo:</label>
+                        <select name="tem" id="tema">
+                            <option value="1">Solicitud</option>
+                            <option value="1">Sugerencia</option>
+                            <option value="2">Reclamo</option>
+                            <option value="3">Otro</option>
+                        </select>
+                        <br><br>
 
-            <br><br>
+                        <label for="consulta">Escribanos su consulta:</label><br>
+                        <textarea name="" id="consulta" cols="30" rows="10"
+                            placeholder="Escriba aquí su consulta..."></textarea>
+                        <br>
 
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar datos">
+                    </fieldset>
 
-        
+                    <br><br>
 
-    </form>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar datos">
 
+
+
+                </form>
+            </div>
+        </main>
 </body>
 
 </html>

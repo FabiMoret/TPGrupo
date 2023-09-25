@@ -1,6 +1,5 @@
-
-*{
-    background-color: rgb(133, 164, 196);
+* {
+    background-color: rgb(214, 218, 223);
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 10px;
@@ -14,11 +13,13 @@
     width: 90%;
     justify-content: space-around;
     flex-direction: row;
-    
-}
-  
 
-header{
+}
+
+
+header {
+    background-color: rgb(133, 164, 196);
+
     width: 100%;
     padding: 10px;
     display: flex;
@@ -27,28 +28,39 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.699);
-    margin: 10px;
+    margin: 10px 10px 10px 10px;
 }
-header .logo{
+
+header .logo {
     color: white;
     font-size: 30px;
-}
-header .logo a {
-    color:white;
-    text-decoration: none;
-    line-height: 50px;
+    background-color: rgb(133, 164, 196);
 
 }
-header .logo img{
+
+header .logo a {
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    background-color: rgb(133, 164, 196);
+
+}
+
+header .logo img {
     width: 70px;
     vertical-align: top;
+    background-color: rgb(133, 164, 196);
+
 }
-header nav{
- 
+
+header nav {
+
     width: 50%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    background-color: rgb(133, 164, 196);
+
 }
 
 header nav a {
@@ -57,99 +69,122 @@ header nav a {
     text-align: center;
     text-decoration: none;
     padding: 10px;
-    flex-grow:1;
+    flex-grow: 1;
+    background-color: rgb(133, 164, 196);
+
 
 }
-header nav a:hover{
+
+header nav a:hover {
     /* background-color: rgb(211, 163, 129); */
 }
 
-main{
-    padding: 20px;
+main {
+    padding: 10px;
     /* background-color: rgb(154, 126, 180); */
     flex: 1 1 80%;
     display: flex;
-    
+    /* background-color: rgb(229, 232, 235); */
+
+
 
 }
-aside{
-   padding: 20px;
+
+aside {
+    padding: 20px;
     /* background-color: rgb(216, 219, 29); */
     border: 5px;
     flex-wrap: wrap;
-    flex:0 0 20% ;
+    flex: 0 0 20%;
     justify-content: flex-start;
     flex-direction: column;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.699);
-    margin: 10px;
-
+    background-color: rgb(133, 164, 196);
+    margin: 10px 10px 10px 10px;
 }
 
 
-.main article{
+
+.main article {
     margin-bottom: 20;
     padding-bottom: 20;
     /* border: 1px solid #000; */
     /* background-color: chartreuse; */
     
 
+
 }
 
-footer{
+footer {
     /* background-color: bisque; */
     width: 100%;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.699);
+    background-color: rgb(133, 164, 196);
 
-   
 
 }
 
-footer.links{
+footer.links {
     /* background-color: blueviolet; */
     display: flex;
     flex-wrap: wrap;
-    
+    background-color: rgb(133, 164, 196);
+
+
 }
 
-footer .links a{
+footer .links a {
     flex-grow: 1;
     padding: 10px;
     display: inline-block;
     text-align: center;
     text-decoration: none;
+    background-color: rgb(133, 164, 196);
+
     
 
-}
-footer .links a:hover{
-    /* background-color: aquamarine; */
 
 }
+
+footer .links a:hover {
+    /* background-color: aquamarine; */
+
+
+}
+
 @media screen and (max-width: 866px) {
-    .container{
+    .container {
         flex-direction: column;
     }
-    header{
+
+    header {
         flex-direction: column;
         padding: 0;
     }
 
-    header nav{
+    header nav {
         width: 100%;
     }
-    aside{
+
+    aside {
         flex-direction: row;
         flex: 0;
+    background-color: rgb(133, 164, 196);
+    
+
 
     }
 }
 
 /* ESTILO CONTACTO */
 
+.contacto {
+
+}
+
 
 
 /* ESTILO REGISTRO */
-
-

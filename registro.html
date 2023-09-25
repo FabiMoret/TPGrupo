@@ -9,94 +9,114 @@
 </head>
 
 <body>
-    <h1>Registro</h1>
-    <form action="" method="post">
 
-        <fieldset>
-            <legend>Datos de registro</legend>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+                <a href="#">Registro</a>
+            </div>
+            <nav>
+                <!--dejar uno al lado del otro para mostrar como debe quedar -->
+                <a href="principal.html">Inicio</a>
+                <a href="nosotros.html">Quienes somos</a>
+                <a href="registro.html">Registro</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </header>
+        <main>
 
-            <label for="usuario">Nombre de usuario</label><br>
-            <input type="text" name="" id="usuario" placeholder="Usuario" required>
-            <br><br>
+            <div class="registro">
+                <form action="" method="post">
 
-            <label for="pass">Contraseña</label><br>
-            <input type="password" name="" id="pass" minlength="6" placeholder="Mínimo 6 caracteres">
-            <br><br>
+                    <fieldset>
+                        <legend>Datos de registro</legend>
 
-            <label for="pass">Confirme su contraseña</label><br>
-            <input type="password" name="" id="pass" minlength="6" placeholder="Repita su contraseña" required>
-            <br>
+                        <label for="usuario">Nombre de usuario</label><br>
+                        <input type="text" name="" id="usuario" placeholder="Usuario" required>
+                        <br><br>
 
-        </fieldset>
-        <br>
+                        <label for="pass">Contraseña</label><br>
+                        <input type="password" name="" id="pass" minlength="6" placeholder="Mínimo 6 caracteres">
+                        <br><br>
 
-        <fieldset>
-            <legend>Datos personales</legend>
+                        <label for="pass">Confirme su contraseña</label><br>
+                        <input type="password" name="" id="pass" minlength="6" placeholder="Repita su contraseña"
+                            required>
+                        <br>
 
-            <label for="nom">Nombre:</label><br>
-            <input type="text" name="nombre" id="nom" size="15" required placeholder="Tu nombre...">
-            <br><br>
+                    </fieldset>
+                    <br>
 
-            <label for="ape">Apellido:</label><br>
-            <input type="text" name="" id="ape" size="15" required placeholder="Tu apellido...">
-            <br><br>
+                    <fieldset>
+                        <legend>Datos personales</legend>
 
-            <label for="nac">Fecha de nacimiento:</label><br>
-            <input type="date" name="" id="nac">
-            <br><br>
+                        <label for="nom">Nombre:</label><br>
+                        <input type="text" name="nombre" id="nom" size="15" required placeholder="Tu nombre...">
+                        <br><br>
 
-            <label for="tel">Teléfono</label><br>
-            <input type="number" name="" id="tel" required placeholder="11 12345678">
-            <br><br>
+                        <label for="ape">Apellido:</label><br>
+                        <input type="text" name="" id="ape" size="15" required placeholder="Tu apellido...">
+                        <br><br>
 
-            <label for="email">Email:</label><br>
-            <input type="email" name="" id="email" required placeholder="ejemplo@email.com">
-            <br>
+                        <label for="nac">Fecha de nacimiento:</label><br>
+                        <input type="date" name="" id="nac">
+                        <br><br>
 
-        </fieldset>
-        <br>
+                        <label for="tel">Teléfono</label><br>
+                        <input type="number" name="" id="tel" required placeholder="11 12345678">
+                        <br><br>
 
-        <fieldset>
-            <legend>Intereses</legend>
+                        <label for="email">Email:</label><br>
+                        <input type="email" name="" id="email" required placeholder="ejemplo@email.com">
+                        <br>
 
-            <input type="checkbox" name="" id="series">
-            <label for="terminos">Series</label>
-            <br>
+                    </fieldset>
+                    <br>
 
-            <input type="checkbox" name="" id="terminos">
-            <label for="terminos">Películas</label>
-            <br><br>
+                    <fieldset>
+                        <legend>Intereses</legend>
 
-            <label for="genero">Géneros de su interés:</label>
-            <select name="gen" id="genero">
-                <option value="1">Todos</option>
-                <option value="1">Acción</option>
-                <option value="2">Animación</option>
-                <option value="3">Comedia</option>
-                <option value="4">Documental</option>
-                <option value="5">Familia</option>
-                <option value="6">Fantasía</option>
-                <option value="7">Historia</option>
-                <option value="8">Infantil</option>
-                <option value="9">Música</option>
-                <option value="10">Romance</option>
-            </select>
-            <br>
+                        <input type="checkbox" name="" id="series">
+                        <label for="terminos">Series</label>
+                        <br>
 
-        </fieldset>
+                        <input type="checkbox" name="" id="terminos">
+                        <label for="terminos">Películas</label>
+                        <br><br>
 
-        <input type="checkbox" name="" id="novedades" checked>
-        <label for="novedades">¿Desea recibir novedades por correo electrónico?</label>
-        <br>
+                        <label for="genero">Géneros de su interés:</label>
+                        <select name="gen" id="genero">
+                            <option value="1">Todos</option>
+                            <option value="1">Acción</option>
+                            <option value="2">Animación</option>
+                            <option value="3">Comedia</option>
+                            <option value="4">Documental</option>
+                            <option value="5">Familia</option>
+                            <option value="6">Fantasía</option>
+                            <option value="7">Historia</option>
+                            <option value="8">Infantil</option>
+                            <option value="9">Música</option>
+                            <option value="10">Romance</option>
+                        </select>
+                        <br>
 
-        <input type="checkbox" name="" id="terminos">
-        <label for="terminos">Acepto los términos y condiciones</label>
-        <br><br>
+                    </fieldset>
 
-        <input type="submit" value="Registro">
-        <input type="reset" value="Borrar datos">
+                    <input type="checkbox" name="" id="novedades" checked>
+                    <label for="novedades">¿Desea recibir novedades por correo electrónico?</label>
+                    <br>
 
-    </form>
+                    <input type="checkbox" name="" id="terminos">
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                    <br><br>
+
+                    <input type="submit" value="Registro">
+                    <input type="reset" value="Borrar datos">
+
+                </form>
+            </div>
+        </main>
 
 </body>
 
