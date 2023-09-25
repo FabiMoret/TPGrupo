@@ -1,18 +1,20 @@
 
 *{
-    background-color: lightslategray;
+    background-color: rgb(133, 164, 196);
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px;
 }
 
 /* ESTILO INDEX */
 .container {
     display: flex;
     flex-wrap: wrap;
-    background: steelblue;
+    /* background: steelblue; */
     width: 90%;
     justify-content: space-around;
     flex-direction: row;
+    
 }
   
 
@@ -24,6 +26,8 @@ header{
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.699);
+    margin: 10px;
 }
 header .logo{
     color: white;
@@ -36,20 +40,20 @@ header .logo a {
 
 }
 header .logo img{
-    width: 50px;
+    width: 70px;
     vertical-align: top;
 }
 header nav{
  
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
 header nav a {
-    background-color: antiquewhite;
-    color: rgb(29, 71, 109);
+    /* background-color: antiquewhite; */
+    /* color: rgb(29, 71, 109); */
     text-align: center;
     text-decoration: none;
     padding: 10px;
@@ -57,24 +61,27 @@ header nav a {
 
 }
 header nav a:hover{
-    background-color: rgb(211, 163, 129);
+    /* background-color: rgb(211, 163, 129); */
 }
 
 main{
     padding: 20px;
-    background-color: rgb(154, 126, 180);
+    /* background-color: rgb(154, 126, 180); */
     flex: 1 1 80%;
     display: flex;
+    
 
 }
 aside{
    padding: 20px;
-    background-color: rgb(216, 219, 29);
+    /* background-color: rgb(216, 219, 29); */
     border: 5px;
     flex-wrap: wrap;
     flex:0 0 20% ;
     justify-content: flex-start;
     flex-direction: column;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.699);
+    margin: 10px;
 
 }
 
@@ -82,23 +89,26 @@ aside{
 .main article{
     margin-bottom: 20;
     padding-bottom: 20;
-    border: 1px solid #000;
-    background-color: chartreuse;
+    /* border: 1px solid #000; */
+    /* background-color: chartreuse; */
+    
 
 }
 
 footer{
-    background-color: bisque;
+    /* background-color: bisque; */
     width: 100%;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.699);
+
    
 
 }
 
 footer.links{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     display: flex;
     flex-wrap: wrap;
     
@@ -114,7 +124,7 @@ footer .links a{
 
 }
 footer .links a:hover{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 
 }
 @media screen and (max-width: 866px) {
