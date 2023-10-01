@@ -1,0 +1,96 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: 400; */
+    box-sizing: border-box;
+}
+
+.fondo-consultas {
+    background-color: black;
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;  
+}
+
+
+
+/* .contenedor-consultas {
+    width: 60vw;
+    /* max-width: 40%; */
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+    /* gap: 20px; */
+
+#form-consultas {
+    /* border: 1px solid white; */
+    background-color: rgb(35, 35, 35);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(236, 233, 233, 0.61);
+    /* box-shadow: 0 0 0.5rem rgba(250, 249, 249, 0.918); */
+    /* display: grid; */
+    /* align-content: space-between; */
+
+}
+
+#clabel,
+#cinput{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    
+}
+
+#clabel{
+    font-weight: bold;    
+}
+
+#cinput, #textarea{
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 5px;    
+}
+
+/*------------------------------------------*/
+
+
+.enviar{
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: transform 0.3s;
+    background-color: #d88c00;
+}
+
+.enviar:hover{
+    transform: scale(1.05);
+    font-size: large;
+}
+
+.edad-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 0px 0px 5px 0px;
+}
+
+.edad-container label {
+    margin-right: 10px;
+    font-weight: 100;
+    font-size: small;
+    /* margin: 0px 0px 5px 0px; */
+}
+
+input[type="radio"]{
+        
+}
+
+#mensajeGracias{
+    text-align: center;
+}

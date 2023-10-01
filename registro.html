@@ -4,142 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-    <title>Registro</title>
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,900&display=swap"
+        rel="stylesheet">
+    <script src="js/registro.js"></script>
+    <title>Formulario JS</title>
 </head>
 
 <body>
+    <!-- COPIA DE HEADER -->
+    <header>
 
-<!-- COPIA DEL HEADER DE INDEX -->
-    <div class="container">
-        <header>
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
-                <a href="#">Registro</a>
-            </div>
-            <nav>
-                <!--dejar uno al lado del otro para mostrar como debe quedar -->
-                <a href="index.html">Inicio</a>
-                <a href="nosotros.html">Quienes somos</a>
-                <a href="registro.html">Registro</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        
-        
-        </header>
-        <!-- FIN COPIA DE HEADER -->
+    </header>
+    <!-- FIN COPIA DE HEADER -->
+    <main>
 
+        <div class="contenedor-registro">
+            <h1 style="color: #d88c00;">Registro</h1>
+            <div class="contenedor-dosregistros">
+                <form id="form-registro">
+                    <label id="rlabel" for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Nombre">
 
-        <main>
+                    <label id="rlabel for=" apellido">Apellido:</label>
+                    <input type="text" id="apellido" placeholder="Apellido">
 
-            <div class="registro">
-                <form action="" method="post">
+                    <label id="rlabel for=" email">Email:</label>
+                    <input type="email" id="email" placeholder="ejemplo@email.com">
 
-                    <fieldset>
-                        <legend>Datos de registro</legend>
+                    <label id="rlabel for=" contrasenia">Contraseña:</label>
+                    <input type="password" id="contrasenia">
 
-                        <label for="usuario">Nombre de usuario</label><br>
-                        <input type="text" name="" id="usuario" placeholder="Usuario" required>
-                        <br><br>
+                    <label id="rlabel for=" edad">Edad:</label>
+                    <input type="number" id="edad">
 
-                        <label for="pass">Contraseña</label><br>
-                        <input type="password" name="" id="pass" minlength="6" placeholder="Mínimo 6 caracteres">
-                        <br><br>
+                    <label id="rlabel for=" genero">Géneros de su interés:</label>
+                    <select id="gen" name="gen" id="genero">
+                        <option value="1">Todos</option>
+                        <option value="2">Acción</option>
+                        <option value="3">Animación</option>
+                        <option value="4">Comedia</option>
+                        <option value="5">Documental</option>
+                        <option value="6">Familia</option>
+                        <option value="7">Fantasía</option>
+                        <option value="8">Historia</option>
+                        <option value="9">Infantil</option>
+                        <option value="10">Música</option>
+                        <option value="11">Romance</option>
+                    </select>
 
-                        <label for="pass">Confirme su contraseña</label><br>
-                        <input type="password" name="" id="pass" minlength="6" placeholder="Repita su contraseña"
-                            required>
-                        <br>
+                    <div>
+                        <button class="registro" type="button" onclick="mostrarDatos()">Registro</button>
+                    </div>
 
-                    </fieldset>
-                    <br>
-
-                    <fieldset>
-                        <legend>Datos personales</legend>
-
-                        <label for="nom">Nombre:</label><br>
-                        <input type="text" name="nombre" id="nom" size="15" required placeholder="Tu nombre...">
-                        <br><br>
-
-                        <label for="ape">Apellido:</label><br>
-                        <input type="text" name="" id="ape" size="15" required placeholder="Tu apellido...">
-                        <br><br>
-
-                        <label for="nac">Fecha de nacimiento:</label><br>
-                        <input type="date" name="" id="nac">
-                        <br><br>
-
-                        <label for="tel">Teléfono</label><br>
-                        <input type="number" name="" id="tel" required placeholder="11 12345678">
-                        <br><br>
-
-                        <label for="email">Email:</label><br>
-                        <input type="email" name="" id="email" required placeholder="ejemplo@email.com">
-                        <br>
-
-                    </fieldset>
-                    <br>
-
-                    <fieldset>
-                        <legend>Intereses</legend>
-
-                        <input type="checkbox" name="" id="series">
-                        <label for="terminos">Series</label>
-                        <br>
-
-                        <input type="checkbox" name="" id="terminos">
-                        <label for="terminos">Películas</label>
-                        <br><br>
-
-                        <label for="genero">Géneros de su interés:</label>
-                        <select name="gen" id="genero">
-                            <option value="1">Todos</option>
-                            <option value="1">Acción</option>
-                            <option value="2">Animación</option>
-                            <option value="3">Comedia</option>
-                            <option value="4">Documental</option>
-                            <option value="5">Familia</option>
-                            <option value="6">Fantasía</option>
-                            <option value="7">Historia</option>
-                            <option value="8">Infantil</option>
-                            <option value="9">Música</option>
-                            <option value="10">Romance</option>
-                        </select>
-                        <br>
-
-                    </fieldset>
-
-                    <input type="checkbox" name="" id="novedades" checked>
-                    <label for="novedades">¿Desea recibir novedades por correo electrónico?</label>
-                    <br>
-
-                    <input type="checkbox" name="" id="terminos">
-                    <label for="terminos">Acepto los términos y condiciones</label>
-                    <br><br>
-
-                    <input type="submit" value="Registro">
-                    <input type="reset" value="Borrar datos">
 
                 </form>
+
+                <div id="registro-ok">
+                    <div>
+                        <h3>Bienvenida/o:</h3>
+                        <p><span id="mostrarNombre"> </span></b> <span id="mostrarApellido"> </span>
+                            <p />
+                        <p><b>Su usuario es: <br></b><span id="mostrarEmail"></span></p>
+                        <p><b><br>Ya eres parte de Películas y series!</b>
+                            <span></span>
+                        </p>
+                    </div>
+                    <div>
+                        <button class="borrar" onclick="borrarDatos()">Borrar Datos</button>
+                    </div>
+                </div>
+
+                <div id="check">
+                    <input type="checkbox" name="" id="novedades" checked>
+                    <label for="novedades">¿Desea recibir novedades por correo electrónico?</label><br>
+
+                    <input type="checkbox" name="" id="terminos" required>
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                </div>
+
             </div>
-        </main>
 
-        <!-- COPIA DE FOOTER -->
-        <footer>
-            <section class="links">
-                <a href="img/face.png">
-                    <img src="img/face.png" alt="facebook">
-                </a>
-                <a href="img/insta.png">
-                    <img src="img/insta.png" alt="correo gmail">
-                </a>
-                <a href="img/whatsapp.png">
-                    <img src="img/What.png" alt="whatsaap">
-                </a>
-            </section>
-        </footer>
-        <!-- FIN COPIA DE FOOTER -->
 
+        </div>
+    </main>
+    <!-- COPIA DE FOOTER -->
+    <footer>
+        
+    </footer>
+    
+    <!-- FIN COPIA DE FOOTER -->
 
 </body>
 
