@@ -1,6 +1,5 @@
 * {
     font-family: 'Roboto', sans-serif;
-    /* font-weight: 400; */
     box-sizing: border-box;
 }
 
@@ -24,12 +23,10 @@
 
 #form-registro,
 #registro-ok {
-    /* border: 1px solid white; */
     background-color: rgb(35, 35, 35);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(236, 233, 233, 0.61);
-    /* box-shadow: 0 0 0.5rem rgba(250, 249, 249, 0.918); */
     display: grid;
     align-content: space-between;
 }
@@ -51,7 +48,6 @@ input {
     border-radius: 5px;
 }
 
-/*------------------------------------------*/
 .registro, .borrar{
     color: #ffffff;
     padding: 10px 20px;
@@ -76,13 +72,11 @@ input {
 }
 
 #check{
-    /* border: 1px solid white; */
     background-color: rgb(35, 35, 35);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(236, 233, 233, 0.61);
     display: inline-flex;
-    /* align-content: center; */
     font-size: small; 
     text-align: center;
     flex-direction: column;
@@ -92,7 +86,6 @@ input {
     border: 1px solid white;
     padding: 6px;
     border-radius: 5px;
-    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); */
     display: grid;
     align-content: space-between;
     margin: 0px 0px 10px;
