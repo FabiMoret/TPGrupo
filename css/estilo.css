@@ -1,54 +1,49 @@
 *{
     padding: 0;
-    margin: 00px;
+    margin: 0 auto;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
 }
 
-.container{
-    max-width: 1700px;
-    margin: 0 auto;
+h2{
+    margin: 20px;
 }
 
 
-header {
+.header {
+    grid-area: header;
     background-color: rgb(133, 164, 196);
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 100%;
 }
 
 
-header .logo a {
+.logo a {
     color: white;
     text-decoration: none;
     line-height: 50px;
-    background-color: rgb(133, 164, 196);
     font-size: 30px;
 
 }
 
-header .logo img {
+.logo img {
     width: 70px;
     vertical-align: top;
 
 }
 
-header nav {
+.nav {
 
     width: 50%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    background-color: rgb(133, 164, 196);
 
 }
 
-header nav a {
-    text-align: center;
+nav a {
     text-decoration: none;
     padding: 10px;
     flex-grow: 1;
@@ -62,9 +57,11 @@ header nav a:hover {
 }
 
 .animacion{
+    grid-area: animacion;
     background-color: aqua;
     text-align: center;
-    justify-content: center;
+    height: 250px;
+    width: 70%;
 }
 
 
@@ -72,10 +69,19 @@ header nav a:hover {
 
     border: 2px solid yellow;
     display: grid;
-    width: 100%;
+    width: 1700px;
     grid-template-columns: 2;
-    grid-template-areas: "left contenido";
+    grid-template-areas: "header header"
+                        "animacion animacion"
+                        "left contenido"
+                        "footer footer";
     
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .left{
@@ -89,23 +95,19 @@ header nav a:hover {
 
 .contenido{
     grid-area: contenido;
-    width: 1100px;
+    width: 1500px;
     border: 2px solid;
 }
 
 
-
-.grid-container-2{
-    border: 2px solid white;
-    display: grid;
-    width: 100%;
-    grid-template-columns:3;
-    grid-template-areas: "derecha centro izquierda";
-    justify-content: space-around;
+hr{
+    border: solid 2px red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
 }
 
-footer {
-    /* background-color: bisque; */
+.footer {
     width: 100%;
     padding: 20px;
     display: flex;
@@ -117,7 +119,6 @@ footer {
 }
 
 footer.links {
-    /* background-color: blueviolet; */
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(133, 164, 196);
