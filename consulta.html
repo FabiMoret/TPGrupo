@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/consulta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,900&display=swap"
+        rel="stylesheet">
+    <script src="js/consulta.js"></script>
+    <title>Consulta</title>
+</head>
+
+<body>
+    <!-- COPIA DE HEADER -->
+    <header>
+
+    </header>
+    <!-- FIN COPIA DE HEADER -->
+    <main>
+
+        <div class="fondo-consultas">
+            <h1 style="color: #d88c00;">Consulta</h1>
+            <div>
+                <form id="form-consultas">
+                    <label id="clabel" for="nombre">Nombre:</label>
+                    <input id="cinput" type="text" id="nombre" placeholder="Nombre" required>
+
+                    <label id="clabel" for="apellido">Apellido:</label>
+                    <input id="cinput" type="text" id="apellido" placeholder="Apellido" required>
+
+                    <label id="clabel" for="email">Email:</label>
+                    <input id="cinput" type="email" id="email" placeholder="ejemplo@email.com" required>
+
+                    <div class="edad-container">
+                        <input type="radio" id="menor" name="edad" value="menor">
+                        <label for="menor">Soy menor de 18 años</label>
+                    </div>
+
+                    <div class="edad-container">
+                        <input type="radio" id="mayor" name="edad" value="mayor">
+                        <label for="mayor">Soy mayor de 18 años.</label><br><br>
+                    </div>
+
+                    <label id="clabel" for="motivo">Motivo:</label>
+                    <select id="cinput" name="motivo" id="motivo">
+                        <option value="1">Solicitud</option>
+                        <option value="1">Sugerencia</option>
+                        <option value="2">Reclamo</option>
+                        <option value="2">Otro</option>
+                    </select>
+
+                    <label id="clabel" for="consulta">Escribanos su consulta:</label>
+                    <textarea id="cinput" name="consulta" cols="30" rows="10" placeholder="Escriba aquí su consulta..." required></textarea>
+
+                    <div>
+                        <button class="enviar" type="button" onclick="mostrarDatos()">Enviar</button>
+                    </div>
+
+                </form>
+
+                <!-- // RESPUESTA -->
+
+                <div id="mensGracias" style="display: none;">
+                    <h2>Mensaje enviado!</h2>
+                    <p>Gracias por tu consulta. <br>
+                    Te responderemos lo antes posible.
+                    </p>
+                </div>
+
+                <!-- //RESPUESTA -->
+
+            </div>
+        </div>
+    </main>
+    <!-- COPIA DE FOOTER -->
+    <footer>
+
+    </footer>
+    <!-- FIN COPIA DE FOOTER -->
+
+</body>
+
+</html>
