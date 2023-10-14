@@ -25,13 +25,13 @@
             <h1 style="color: #d88c00;">Consulta</h1>
             <div>
                 <form id="form-consultas">
-                    <label id="clabel" for="nombre">Nombre:</label>
+                    <label id="clabel" for="nombre">* Nombre:</label>
                     <input id="cinput" type="text" id="nombre" placeholder="Nombre" required>
 
-                    <label id="clabel" for="apellido">Apellido:</label>
+                    <label id="clabel" for="apellido">* Apellido:</label>
                     <input id="cinput" type="text" id="apellido" placeholder="Apellido" required>
 
-                    <label id="clabel" for="email">Email:</label>
+                    <label id="clabel" for="email">* Email:</label>
                     <input id="cinput" type="email" id="email" placeholder="ejemplo@email.com" required>
 
                     <div class="edad-container">
@@ -52,11 +52,13 @@
                         <option value="2">Otro</option>
                     </select>
 
-                    <label id="clabel" for="consulta">Escribanos su consulta:</label>
+                    <label id="clabel" for="consulta">* Escribanos su consulta:</label>
                     <textarea id="cinput" name="consulta" cols="30" rows="10" placeholder="Escriba aquí su consulta..." required></textarea>
+                    <p>* Campos obligatorios</p>
 
                     <div>
                         <button class="enviar" type="button" onclick="mostrarDatos()">Enviar</button>
+                        
                     </div>
 
                 </form>
