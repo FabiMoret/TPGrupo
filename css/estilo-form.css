@@ -151,3 +151,16 @@ button {
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(236, 233, 233, 0.61);
 }
+
+/* ESTILOS DE TERMINOS */
+
+.terminos-caja{
+    background-color: black;
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+.terminos-hijo{
+    
+}
