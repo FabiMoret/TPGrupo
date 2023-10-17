@@ -1,38 +1,28 @@
-function mostrarDatos() {
-    document.getElementById("registro-ok").style.visibility = "visible"
+const formulario = document.getElementById("tarjetaregistro");
 
-    // Se guardan los datos en variables
-    var nombre = document.getElementById("nombre").value
-    var apellido = document.getElementById("apellido").value
-    var email = document.getElementById("email").value
+formulario.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-    // Se valida si alguno de los campos está vacío
-    if (nombre === '' || apellido === '' || email === '') {
-        alert('Por favor, complete todos los campos.');
-        document.getElementById("registro-ok").style.visibility = "hidden";
-        return; // Se sale de la función si falta algún dato
+    const nombre = document.getElementById("nombre").value;
+    const apellido = document.getElementById("apellido").value;
+    const fechaNacimiento = new Date(document.getElementById("fechanac").value);
+    const respuesta = document.getElementById("respuesta");
+    const datosError = document.getElementById("datos-error");
+
+    // Calcular la edad
+    const hoy = new Date();
+    const edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
+
+    if (hoy.getMonth() < fechaNacimiento.getMonth() || (hoy.getMonth() === fechaNacimiento.getMonth() && hoy.getDate() < fechaNacimiento.getDate())) {edad--;
+    }
+
+    // Si tiene 18 años SI y si no no puede
+    if (edad >= 18) {
+        datosError.textContent = "";
+        respuesta.textContent = `Bienvenido/a ${nombre} ${apellido}. Gracias por registrarte.`;
+        formulario.reset();
     } else {
-        var correo = apellido.split(' ').join('') + "." + nombre.split(' ').join('') + "@empresa.com.ar"
-        var password = apellido.split(' ').join('') + "-" + "!#*"
-
-        // Si todos los datos están completos, se muestra la otra columna
-        document.getElementById("registro-ok").style.visibility = "visible";
-
-        // Colocamos los datos en los span
-        document.getElementById("mostrarNom").textContent = nombre
-        document.getElementById("mostrarApe").textContent = apellido.toUpperCase()
-        document.getElementById("mostrarEmail").textContent = email
-}
-}
-
-function borrarDatos() {
-    document.getElementById("formulario").reset()
-    document.getElementById("mostrarNom").textContent = ""
-    document.getElementById("mostrarApe").textContent = ""
-    document.getElementById("mostrarEmail").textContent = ""
-    document.getElementById("registro-ok").style.visibility = "hidden"
-}
-
-window.onload = function () {
-    document.getElementById("registro-ok").style.visibility = "hidden"
-}
+        respuesta.textContent = "";
+        datosError.textContent = "Eres menor de 18 años, no puedes registrarte.";
+    }
+});
