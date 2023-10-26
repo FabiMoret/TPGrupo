@@ -1,209 +1,278 @@
 *{
     padding: 0;
-    margin: 0 auto;
+    margin: 0 ;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-}
-
-h2{
-    margin: 20px;
-}
-
-
-.header {
-    grid-area: header;
-    display: grid;
-    grid-template-columns: 15% 65% 10%;
+    background-color: rgb(20, 16, 16);
     
-    align-content: start;
-    background-image: url(./elemental.jpg);
-    background-position: center center;
-    /*background-repeat: no-repeat;*/
-    border: 2px solid black;
+}
+.grid-container{
     width: 100%;
-    height: 100%;
-    /*height: 500px;*/
-    background-color: aqua;
+    
+
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header "
+                         " main"
+                         "footer";
+    
 }
 
+#header{
+    grid-area: header;
+    width: 100%;
 
+    
+}
+
+.logo{
+    grid-area: logo;
+    width: 50%;
+    display: flex;
+}
+
+.logo img{
+    width: 25px;
+    height: 25px;
+}
 .logo a {
     color: white;
     text-decoration: none;
     line-height: 50px;
-    font-size: 30px;
+    font-size: 10px;
+    
 
 }
 
-.logo img {
-    width: 70px;
-    vertical-align: top;
 
+
+.nav{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 15% 65% 20%;
+    
+    grid-template-areas: "logo links buscador";
+    border: 2px solid rgb(170, 42, 138);
+    
 }
 
-.nav {
-
-    width: 50%;
+.link{
+    grid-area: links;
+    width: 100%;
     display: flex;
     align-items: center;
-
+    margin-left: 0;
 }
-
-nav a {
+.link a {
     text-decoration: none;
+    font-size: 10px;
     padding: 10px;
     flex-grow: 1;
-
+    
 
 }
 
-header nav a:hover {
+.link a:hover {
     background-color: rgb(211, 163, 129); 
 }
 
 .buscador{
+    grid-area: buscador;
+    width: 100%;
     display: flex;
     align-items: center;
+    
+
    
 }
 
 input.src{
     height: 30px;
-    width: 150px;
+    width: 60px;
     transition: all .5s;
     border-radius: 10px;
     border: 3px solid blue;
     padding: 9px 10px 9px 10px;
     outline: none;
-    font-size: 15px;
+    font-size: 10px;
     color: black;
 }
 
 input.src:hover{
-    width: 180px;
+    width: 110px;
     background-color: rgb(180, 180, 197);
 }
 
+
 .animacion{
     grid-area: animacion;
-    background-image: url(./gris.jpg);
-    width: 100%;
-    
+    margin-left: 10%;
+    display: none;
+    width: 80%;
+    border: 1px solid rgb(191, 207, 45);
+    justify-content: center ;
+
 }
 
+
 .slider-box{
-    width: 550px;
-    height: 350px;
+    margin: 0;
+    width: 100%;
+   
     overflow: hidden;
+    
 }
 
 .slider-box ul{
     display: flex;
-    padding: 0;
+    
+
+    margin-top: 0;
     width: 500%;
-    animation: slide 20s infinite alternate ease-in-out;
+    
+    animation: slide 15s infinite alternate ease-in-out;
 }
 
 .slider-box li{
+    
+    padding: 0;
+    margin-top: 0;
     width: 100%;
+    height: 100%;
     list-style: none;
-    position: relative;
+   
 }
 
 
 .slider-box img{
+    padding: 0;
+    margin: 0;
+    height: 100%;
     width: 100%;
-}
-
-@keyframes slide{
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
-}
-
-@media(max-width:991px){
-    body{
-        padding: 30px;
-    }
-    .slider-box{
-        width: 100%;
-    }
-  
-}
-
-
-.grid-container{
-
-    border: 2px solid yellow;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 15% 85%;
-    grid-template-rows:400px 350px 2000px 150px ;
-    grid-template-areas: "header header"
-                        "animacion animacion"
-                        "left contenido"
-                        "footer footer";
+    background-position: center center;
+    object-fit: cover;
     
 }
-.contenedor{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
+@keyframes slide{
+    0% {margin-left: 0;}
+    15% {margin-left: 0;}
+
+    20%{margin-left: -100%;}
+    35%{margin-left: -100%;}
+
+    40%{margin-left: -200%;}
+    55%{margin-left: -200%;}
+
+    60%{margin-left: -300%;}
+    75%{margin-left: -300%;}
+
+    80%{margin-left: -300%;}
+    95%{margin-left: -300%;}
 }
 
-.left{
-    grid-area: left;
+
+.generos{
+    grid-area: generos;
     margin-top: 15px;
-    display: flex;
+    display: none;
     flex-wrap: nowrap;
     flex-direction: column;
-    border: 2px solid black;
     width: 100%;
     height: 500px;
     overflow-y: scroll;
-    background-color: rgb(11, 11, 231);
+    /*background-color: rgb(122, 83, 10);*/
 
 }
-
-.left div{
-    margin: 3px;
-    border: 2px solid black;
-    background-color: aqua;
+.generos::-webkit-scrollbar{
+    border: 2px solid aqua;
     border-radius: 10px;
-    align-items: center;
+    height: 8px;
+    /*background-color: blue*/
+    background-color: rgb(122, 83, 10);
     
 }
 
-.left div a{
-    text-decoration: none;
-    padding: 15px;
-    margin: 15px;
-    flex-grow: 1;
-    font-size: 20px;
+.generos ul{
+
+    width: 100%;
+
+    
+}
+.generos ul li{
+    margin: 10px;
+    padding: 2px;
+}
+
+.generos ul li a{
+    color: white;
+    font-size: 15px;
+}
+.generos li:nth-child(1n){
+    border-radius: 15px;
+    background-color: aqua;
+    
+    
+}
+
+.main{
+    grid-area: main;
 }
 
 .contenido{
-    grid-area: contenido;
-    width: 85%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 3px solid rgb(161, 78, 10);
+    border-radius: 15px;
+    box-shadow: 0 0 0.5rem rgba(82, 41, 3, 0.699);
+    margin-top: 10px;
+    align-items: center;
+    
+    
+}
 
+.contenido h2{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contenedor{
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    
+    
 }
 
 
+.lugar{
+    display: flex;
 
-hr{
-    border: solid 2px red;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    align-items: center;
+    flex-direction: row;
     width: 50%;
+    flex-direction: column;
+    /*border: 2px solid red;*/
+}
+
+.lugar a{
+    
+    width: 80%;
+    font-size: 15px;
+    color:white;
+
+}
+
+.lugar img{
+    margin-top: 10px;
+
+    padding: 0;
+    width: 80%;
+    height: 80%;
+    border-radius: 15px;
 }
 
 .footer {
@@ -211,9 +280,8 @@ hr{
     width: 100%;
     padding: 20px;
     display: flex;
-    flex-wrap: wrap;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.699);
-    background-color: rgb(133, 164, 196);
+    /*background-color: rgb(133, 164, 196);*/
 
 
 }
@@ -221,7 +289,7 @@ hr{
 footer.links {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(133, 164, 196);
+    background-color: rgb(51, 87, 124);
 
 
 }
@@ -232,7 +300,7 @@ footer .links a {
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    background-color: rgb(133, 164, 196);
+    background-color: rgb(1, 10, 19);
 
     
 
@@ -245,23 +313,65 @@ footer .links a:hover {
 
 }
 
-@media screen and (max-width: 866px) {
-    .container {
-        flex-direction: column;
+@media only screen and (min-width:460px) {
+    .grid-container {
+        grid-template-columns: 30% 70% ;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "header header "
+                             "animacion animacion "
+                            " generos main "
+                             "footer footer " ;
+
     }
 
-    header {
-        flex-direction: column;
-        padding: 0;
+    .generos{
+        display: flex;
     }
 
-    header nav {
+    .animacion{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width:900px){
+
+    .grid-container{
+        grid-template-columns: 10% 15% 65% 10% ;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "header header header header"
+                             ". animacion animacion ."
+                             ". generos main ."
+                            "footer footer footer footer" ;
+    }
+
+ 
+
+    .logo{
         width: 100%;
     }
 
-    aside {
-        flex-direction: row;
-        flex: 0;
-    background-color: rgb(133, 164, 196);
+    .logo img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .link{
+        width: 50%;
+    }
+
+    .generos{
+        display: flex;
+    }
+
+    .animacion{
+        display: flex;
+
+    }
+    .lugar{
+        width: 20%;
+    }
+
+    .lugar img{
+        width: 100%;
     }
 }
