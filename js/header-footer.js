@@ -60,16 +60,14 @@ let header = `
   <img height="50" width="50" src="img/logo.png" alt="logo">
 </a>
 <button class="open-menu" aria-label="Abrir Menú">
-  <i class="fa-solid fa-bars"></i>
+  menu
 </button>
 <ul class="menu">
-  <button class="close-menu" aria-label="Cerrar Menú">
-    <i class="fa-solid fa-xmark"></i>
-  </button>
-  <li><a href="index.html" class="selected">Inicio</a></li>
-  <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
-  <li><a href="registro.html">Registrate</a></li>
-  <li><a href="contacto.html">Contacto</a></li>
+
+  <li><a href="#inicio" class="selected">Inicio</a></li>
+  <li><a href="#generos">Géneros</a></li>
+  <li><a href="#quienes">¿Quiénes Somos?</a></li>
+  <li><a href="#registro">Registrate</a></li>
   <li class="buscador"><input type="text" class="src" name="search" placeholder="Buscar ..." autocomplete="off"></li>
 </ul>
 </nav>
