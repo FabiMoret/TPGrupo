@@ -8,6 +8,7 @@ let footer = `
                         <li><a href="nosotros.html">Acerca de</a></li>
                         <li><a href="registro.html">Registro</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="Terminos.html">Terminos</a></li>
                     </ul>
                 </div>
                 <div class="cont-red">
