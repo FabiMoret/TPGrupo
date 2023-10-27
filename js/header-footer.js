@@ -50,9 +50,6 @@ let footer = `
 
 `
 
-<<<<<<< HEAD:js/footer.js
-document.getElementById("footer").innerHTML=footer
-=======
 document.getElementById("footer").innerHTML = footer
 
 let header = `
@@ -68,10 +65,10 @@ let header = `
   <button class="close-menu" aria-label="Cerrar Menú">
     <i class="fa-solid fa-xmark"></i>
   </button>
-  <li><a href="#inicio" class="selected">Inicio</a></li>
-  <li><a href="#generos">Géneros</a></li>
-  <li><a href="#quienes">¿Quiénes Somos?</a></li>
-  <li><a href="#registro">Registrate</a></li>
+  <li><a href="index.html" class="selected">Inicio</a></li>
+  <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
+  <li><a href="registro.html">Registrate</a></li>
+  <li><a href="contacto.html">Contacto</a></li>
   <li class="buscador"><input type="text" class="src" name="search" placeholder="Buscar ..." autocomplete="off"></li>
 </ul>
 </nav>
@@ -94,4 +91,3 @@ function toggleMenu() {
 openMenuBTN.addEventListener("click", toggleMenu);
 /*cdo se produce el evento click en el close-menu, ejecuta la funcion*/
 closeMenuBTN.addEventListener("click", toggleMenu);
->>>>>>> fdafe077631c65d47e609aadf3db709233c693a1:js/header-footer.js
