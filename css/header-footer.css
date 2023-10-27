@@ -1,3 +1,12 @@
+/* colores */
+:root {
+    --color1: #000000;
+    --color2: #141414;
+    --color3: white;
+    --color4: #3f576e6a;
+    --color5: #284b63ee;
+    --color6: #229b9fc5;
+}
 
 /*header inicio*/
 .topheader {
