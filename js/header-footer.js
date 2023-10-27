@@ -51,3 +51,43 @@ let footer = `
 `
 
 document.getElementById("footer").innerHTML = footer
+
+let header = `
+
+<nav class="topnav">
+<a href="#" class="logo">
+  <img height="50" width="50" src="img/logo.png" alt="logo">
+</a>
+<button class="open-menu" aria-label="Abrir Menú">
+  <i class="fa-solid fa-bars"></i>
+</button>
+<ul class="menu">
+  <button class="close-menu" aria-label="Cerrar Menú">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  <li><a href="#inicio" class="selected">Inicio</a></li>
+  <li><a href="#generos">Géneros</a></li>
+  <li><a href="#quienes">¿Quiénes Somos?</a></li>
+  <li><a href="#registro">Registrate</a></li>
+  <li class="buscador"><input type="text" class="src" name="search" placeholder="Buscar ..." autocomplete="off"></li>
+</ul>
+</nav>
+
+`
+
+document.getElementById("header").innerHTML = header
+
+const menu = document.querySelector(".menu")
+const openMenuBTN = document.querySelector(".open-menu")
+const closeMenuBTN = document.querySelector(".close-menu")
+
+
+/*esta funcion asigna/quita la clase menu_opened a la clase menu*/
+function toggleMenu() {
+    menu.classList.toggle("menu_opened");
+}
+
+/*cdo se produce el evento click en el open-menu, ejecuta la funcion*/
+openMenuBTN.addEventListener("click", toggleMenu);
+/*cdo se produce el evento click en el close-menu, ejecuta la funcion*/
+closeMenuBTN.addEventListener("click", toggleMenu);
