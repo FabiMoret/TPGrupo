@@ -50,4 +50,4 @@ let footer = `
 
 `
 
-document.getElementById("footer").innerHTML = footer
+document.getElementById("footer").innerHTML=footer

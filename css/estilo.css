@@ -275,43 +275,7 @@ input.src:hover{
     border-radius: 15px;
 }
 
-.footer {
-    grid-area: footer;
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.699);
-    /*background-color: rgb(133, 164, 196);*/
 
-
-}
-
-footer.links {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(51, 87, 124);
-
-
-}
-
-footer .links a {
-    flex-grow: 1;
-    padding: 10px;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    background-color: rgb(1, 10, 19);
-
-    
-
-
-}
-
-footer .links a:hover {
-     background-color: aquamarine; 
-
-
-}
 
 @media only screen and (min-width:460px) {
     .grid-container {
