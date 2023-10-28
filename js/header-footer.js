@@ -1,6 +1,6 @@
 let footer = `
 
-<div class="cont-no-resp">
+  <div class="cont-no-resp">
                 <div class="cont-enl">
                     <h3>Enlaces</h3>
                     <ul class="li-enl">
@@ -23,8 +23,8 @@ let footer = `
                 <div class="derechos-reservados">
                     <p>&copy; 2023 PELICULAS. Todos los derechos reservados.</p>
                 </div>
-
-            <div class="cont-resp">
+</div>
+<div class="cont-resp">
                 <details id="resp-list">
                     <summary> Enlaces</summary>
                     <ul class="li-enl">
@@ -46,9 +46,7 @@ let footer = `
                 <div class="derechos-reservados">
                     <p>&copy; 2023 PELICULAS. Todos los derechos reservados.</p>
                 </div>
-            </div>
 </div>
-
 `
 
 document.getElementById("footer").innerHTML = footer
