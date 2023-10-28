@@ -65,9 +65,9 @@ let header = `
 <ul class="menu">
 
   <li><a href="index.html" class="selected">Inicio</a></li>
-  <li><a href="#generos">Géneros</a></li>
   <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
   <li><a href="registro.html">Registrate</a></li>
+  <li><a href="contacto.html">Contacto</a></li>
   <li class="buscador"><input type="text" class="src" name="search" placeholder="Buscar ..." autocomplete="off"></li>
 </ul>
 </nav>
