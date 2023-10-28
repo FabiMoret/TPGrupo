@@ -156,7 +156,7 @@ body{
     width: 100%;
     border-radius: 15px;
     box-shadow: 0 0 0.5rem rgba(82, 41, 3, 0.699);
-    margin-top: 10px;
+    margin-top: 100px;
     align-items: center;
     
     
@@ -234,6 +234,9 @@ body{
 
     .animacion{
         display: flex;
+    }
+    .contenido{
+        margin-top: 10px;
     }
 }
 
