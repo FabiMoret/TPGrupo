@@ -8,12 +8,12 @@
 }
 
 main {
-    padding-top: 100px;
+    
     background-color: var(--color1);
     color: var(--color3);
     width: 100%;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;
     /* height: 650px; */
     justify-content: center;
     /* align-items: center; */
@@ -162,3 +162,16 @@ button {
     padding: 20px;
     color: rgb(214, 211, 211);
 }
+
+#tarjetaregistro,
+#form-consultas{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    
+}
+
+/*#form-consultas{
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+

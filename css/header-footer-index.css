@@ -22,10 +22,12 @@
     width: 100%;/*OCUPE TODO EL ANCHO DISPONIBLE*/
     opacity: 1;
     z-index: 1;  
+   
 }
 
 /* BARRA DE NAVEGAC SUPERIOR ---------------------------------*/
 .topnav {
+    
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -97,8 +99,39 @@
 
 /* MEDIA QUERY PARA DISPOSITIVOS PEQUEÑOS -------------------*/
 
+@media (461px <= width <= 900px){
 
-@media (max-width: 900px) { 
+    .topnav{
+        
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .menu {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+       
+    }
+    
+    .menu li{
+        width: 20%;
+    }
+
+    .menu li a {
+        font-size: 10px;
+        
+    }
+
+    .buscador input{
+        width: 100%;
+       height: 30px;
+     
+    }
+
+}
+
+@media (max-width: 460px) { 
     /*MENU*/
     .menu {
         flex-direction: column;    /*cambia el display flex de filas a columnas*/

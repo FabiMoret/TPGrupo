@@ -23,7 +23,7 @@ let footer = `
                 <div class="derechos-reservados">
                     <p>&copy; 2023 PELICULAS. Todos los derechos reservados.</p>
                 </div>
-            </div>
+
             <div class="cont-resp">
                 <details id="resp-list">
                     <summary> Enlaces</summary>
@@ -46,8 +46,8 @@ let footer = `
                 <div class="derechos-reservados">
                     <p>&copy; 2023 PELICULAS. Todos los derechos reservados.</p>
                 </div>
-            </div>>
-</nav>
+            </div>
+</div>
 
 `
 
@@ -64,10 +64,10 @@ let header = `
 </button>
 <ul class="menu">
 
-  <li><a href="#inicio" class="selected">Inicio</a></li>
+  <li><a href="index.html" class="selected">Inicio</a></li>
   <li><a href="#generos">Géneros</a></li>
-  <li><a href="#quienes">¿Quiénes Somos?</a></li>
-  <li><a href="#registro">Registrate</a></li>
+  <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
+  <li><a href="registro.html">Registrate</a></li>
   <li class="buscador"><input type="text" class="src" name="search" placeholder="Buscar ..." autocomplete="off"></li>
 </ul>
 </nav>
